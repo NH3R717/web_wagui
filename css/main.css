@@ -51,6 +51,9 @@
         #business h1 {
             text-align: left;
         }
+        address {
+            margin: 0em 0em 0em 1em;
+        }
         .map {
             width: 90%;
         }
@@ -297,11 +300,23 @@
         color: rgb(110, 29, 29);
         text-shadow: 0.03em 0.03em 0.03em grey;
     }
+
+    #business a {
+        margin-bottom: .4em;
+        line-height: 1.3em;
+        color: rgb(0, 107, 156);
+        text-decoration: underline;
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
     
     #business address {
         line-height: 1.3em;
         color: rgb(110, 29, 29);
         text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business .location {
+        margin-top: .6em;
     }
     
     .map h3 {
