@@ -47,6 +47,7 @@
         #business {
             text-align: center;
             font-size: 100%;
+            margin-bottom: 1em;
         }
         #business h1 {
             text-align: left;
@@ -103,6 +104,7 @@
         #business {
             text-align: center;
             font-size: 120%;
+            margin-bottom: 1em;
         }
         #business h1 {
             text-align: left;
@@ -193,6 +195,7 @@
 
     .backgroundOverlay {
         background-color: rgba(255, 255, 255, 0.5);
+        height: 110%;
     }
 
     .homeBackground {
