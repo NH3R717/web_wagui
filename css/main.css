@@ -37,6 +37,7 @@
             width: 70vw;
         }
         .storyText {
+            padding-top: 1.5em;
             font-size: 5vw;
             width: auto;
             height: auto;
