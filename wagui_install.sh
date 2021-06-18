@@ -1,7 +1,7 @@
 #!/bin/bash
-exec &>/tmp/wagui_boot_script.log
+# exec &>/tmp/wagui_boot_script.log
 # Run Fail Safe Command
-set -euxo pipefail
+# set -euxo pipefail
 
 #########################
 ### Web Install & Run ###
@@ -32,12 +32,12 @@ curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/master.z
 ## uncompress webfiles and remove master.zip 
 unzip master.zip && rm -rf master.zip
 ## remove unnecessary files
-cd Wagui-Restaurant-master && rm README.md .gitignore
+cd Wagui-Restaurant-master && rm README.md .gitignore dockerfile wagui_install.sh
 ## Copy files from Wagui-Restaurant-master to WebFiles
 cp -a . .. && cd .. && rm -rf Wagui-Restaurant-master && cd ..
 pwd
 # Import docker-compose.yml
-curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/master/web_wagui/docker-compose.yml > docker-compose.yml
+curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/docker-compose.yml > docker-compose.yml
 # Create nginx network
 #! sudo docker network create ${NETWORK}
 # Build and run container w/ ENV
