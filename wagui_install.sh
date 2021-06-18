@@ -37,7 +37,7 @@ cd Wagui-Restaurant-master && rm README.md .gitignore
 cp -a . .. && cd .. && rm -rf Wagui-Restaurant-master && cd ..
 pwd
 # Import docker-compose.yml
-curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/master/web_wagui/docker-compose.yml > docker-compose.yml
+curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/docker-compose.yml > docker-compose.yml
 # Create nginx network
 #! sudo docker network create ${NETWORK}
 # Build and run container w/ ENV
