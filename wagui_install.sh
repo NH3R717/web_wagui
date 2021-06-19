@@ -1,14 +1,14 @@
 #!/bin/bash
-exec &>/tmp/wagui_boot_script.log
+# exec &>/tmp/wagui_boot_script.log
 # Run Fail Safe Command
-set -euxo pipefail
+# set -euxo pipefail
 
 #########################
 ### Web Install & Run ###
 #########################
 
 export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
-export NETWORK=webproxy
+export NETWORK=${VULTR_IP}
 
 echo ${CONTAINER_DIR}
 
@@ -16,11 +16,10 @@ echo ${CONTAINER_DIR}
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
 
 # Add ENV for docker-compose.yml use
-echo "NETWORK=webproxy" >> .env
 echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
+echo "NETWORK=${NETWORK}" >> .env
 echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
-echo "NETWORK=${NETWORK}" >> .env
 echo "LETSENCRYPT_EMAIL=${DEFAULT_EMAIL}"
 # echo "VULTR_IP=${VULTR_IP}" >> .env
 
@@ -32,7 +31,7 @@ curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/master.z
 ## uncompress webfiles and remove master.zip 
 unzip master.zip && rm -rf master.zip
 ## remove unnecessary files
-cd Wagui-Restaurant-master && rm README.md .gitignore
+cd Wagui-Restaurant-master && rm README.md .gitignore dockerfile wagui_install.sh
 ## Copy files from Wagui-Restaurant-master to WebFiles
 cp -a . .. && cd .. && rm -rf Wagui-Restaurant-master && cd ..
 pwd
