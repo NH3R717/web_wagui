@@ -29,7 +29,7 @@ services:
 networks:
   default:
     external:
-      name: nginx-proxy
+      name: ${NETWORK}
 
 volumes:
   conf:

@@ -8,7 +8,7 @@
 #########################
 
 export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
-export NETWORK=webproxy
+export NETWORK=${VULTR_IP}
 
 echo ${CONTAINER_DIR}
 
@@ -16,11 +16,10 @@ echo ${CONTAINER_DIR}
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
 
 # Add ENV for docker-compose.yml use
-echo "NETWORK=webproxy" >> .env
 echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
+echo "NETWORK=${NETWORK}" >> .env
 echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
-echo "NETWORK=${NETWORK}" >> .env
 echo "LETSENCRYPT_EMAIL=${DEFAULT_EMAIL}"
 # echo "VULTR_IP=${VULTR_IP}" >> .env
 
