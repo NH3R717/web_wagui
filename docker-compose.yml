@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: nginx:alpine
+    image: nginx:latest
     container_name: web_wagui
     expose:
       - "80"
@@ -11,7 +11,7 @@ services:
       - VIRTUAL_PORT=80
       - "LETSENCRYPT_HOST=${DOMAIN_NAME_1}"
       - "NETWORK=${NETWORK}"
-      - DEBUG=true
+      - DEBUG=1
     volumes:
       - "${CONTAINER_DIR}/html:/usr/share/nginx/html:ro"
       - conf:/etc/nginx/conf.d
