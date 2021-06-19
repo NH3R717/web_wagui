@@ -24,6 +24,8 @@ echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
 
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
 
+echo "DOMAIN_NAME_3=${DOMAIN_NAME_3}" >> .env
+
 echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
 
 ## Add website dir
