@@ -8,7 +8,6 @@
 #########################
 
 export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
-# export NETWORK=${VULTR_IP}
 
 echo ${CONTAINER_DIR}
 
@@ -42,8 +41,7 @@ cp -a . .. && cd .. && sudo rm -rf Wagui-Restaurant-master && cd ..
 pwd
 # Import docker-compose.yml
 sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/docker-compose.yml > docker-compose.yml
-# Create nginx network
-#! sudo docker network create ${NETWORK}
+
 # Build and run container w/ ENV
 sudo docker-compose up -d --build
  
