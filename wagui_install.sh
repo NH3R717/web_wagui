@@ -8,7 +8,7 @@
 #########################
 
 export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
-export NETWORK=${VULTR_IP}
+# export NETWORK=${VULTR_IP}
 
 echo ${CONTAINER_DIR}
 
@@ -20,7 +20,7 @@ echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
 echo "NETWORK=${NETWORK}" >> .env
 echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
-echo "LETSENCRYPT_EMAIL=${DEFAULT_EMAIL}"
+echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
 # echo "VULTR_IP=${VULTR_IP}" >> .env
 
 ## Add website dir
