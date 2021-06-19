@@ -31,20 +31,20 @@ curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/master.z
 ## uncompress webfiles and remove master.zip 
 unzip master.zip && rm -rf master.zip
 ## remove unnecessary files
-cd Wagui-Restaurant-master && rm README.md .gitignore dockerfile wagui_install.sh
+cd Wagui-Restaurant-master && sudo rm README.md .gitignore dockerfile wagui_install.sh
 ## Copy files from Wagui-Restaurant-master to WebFiles
-cp -a . .. && cd .. && rm -rf Wagui-Restaurant-master && cd ..
+cp -a . .. && cd .. && sudo rm -rf Wagui-Restaurant-master && cd ..
 pwd
 # Import docker-compose.yml
-curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/docker-compose.yml > docker-compose.yml
+sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/docker-compose.yml > docker-compose.yml
 # Create nginx network
 #! sudo docker network create ${NETWORK}
 # Build and run container w/ ENV
-docker-compose up -d --build
+sudo docker-compose up -d --build
 
 #  set to user permissions
-chmod 0750 "${CONTAINER_DIR}"
-chown --recursive \
+sudo chmod 0750 "${CONTAINER_DIR}"
+sudo chown --recursive \
 "${USERNAME}":"${USERNAME}" "${CONTAINER_DIR}"
 # Remove .env = (problems w/ docker-compose down)
 # rm -f .env
