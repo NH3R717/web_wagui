@@ -30,7 +30,7 @@ mkdir html && cd html
 ## Import web files
 curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/dev.zip
 ## uncompress webfiles and remove master.zip 
-unzip master.zip && rm -rf master.zip
+unzip dev.zip && rm -rf dev.zip
 ## remove unnecessary files
 cd Wagui-Restaurant-master && sudo rm README.md .gitignore dockerfile wagui_install.sh docker-compose.yml LICENSE  
 ## copy files from Repo to WebFiles
