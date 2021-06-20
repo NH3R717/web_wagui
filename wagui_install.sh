@@ -27,13 +27,13 @@ export DEFAULT_EMAIL
 ## add website dir
 mkdir html && cd html
 # add ENV for docker-compose.yml use
-## Import web files
+## import web files
 curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/dev.zip
-## uncompress webfiles and remove master.zip 
+## uncompress webfiles and remove *.zip 
 unzip dev.zip && rm -rf dev.zip
 ## remove unnecessary files
-cd Wagui-Restaurant-master && sudo rm README.md .gitignore dockerfile wagui_install.sh docker-compose.yml LICENSE  
-## copy files from Repo to WebFiles
+cd Wagui-Restaurant-dev && sudo rm README.md .gitignore dockerfile wagui_install.sh docker-compose.yml LICENSE  
+## copy files from repo to WebFiles
 cp -a . .. && cd .. && sudo rm -rf Wagui-Restaurant-dev && cd ..
 pwd
 # import docker-compose.yml
