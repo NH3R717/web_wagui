@@ -57,4 +57,4 @@ sudo chown --recursive \
 ###################################*
 
 # sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/wagui_install.sh | exec bash
-# sudo docker stop web_test && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/Wagui
+# sudo docker stop web_wagui && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/Wagui
