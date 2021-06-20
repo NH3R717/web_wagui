@@ -7,25 +7,22 @@
 ### Web Install & Run ###
 #########################
 
-export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
-
-echo ${CONTAINER_DIR}
-
 ## create dir for Docker container
+export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
-
 # add ENV for docker-compose.yml use
 echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
-
+export CONTAINER_DIR
 echo "NETWORK=${NETWORK}" >> .env
-
+export NETWORK
 echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
-
+export DOMAIN_NAME_1
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
-
+export DOMAIN_NAME_2
 echo "DOMAIN_NAME_3=${DOMAIN_NAME_3}" >> .env
-
+export DOMAIN_NAME_3
 echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
+export DEFAULT_EMAIL
 
 ## add website dir
 mkdir html && cd html
@@ -56,5 +53,5 @@ sudo chown --recursive \
 ### Useful Commands & Notes here ###
 ###################################*
 
-# sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/master/wagui_install.sh | exec bash
+# sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/dev/wagui_install.sh | exec bash
 # sudo docker stop web_wagui && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/Wagui
