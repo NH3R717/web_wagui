@@ -8,13 +8,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Clicky Analytics-->
+    <!-- <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101289394);</script>
+    <script async src="//static.getclicky.com/js"></script> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-YHB754Y5NE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YHB754Y5NE');
+    </script> -->
 </head>
 
-<h1>wagui.tw will be back up soon! Stay safe during the pandemic.</h1>
+<body>
+    <div class="backgroundOverlay">
+        <main>
 
-<h2>In the mean time visit Rex's restaurant for some tasty rice pudding.</h2>
+            <header>
+                <nav class="fixed-top">
+                    <div id="navContainer">
+                        <a href="#top">Home</a>
+                        <a href="#Menu_Jump">Menu</a>
+                        <a href="#Business_Jump">Business</a>
+                    </div>
+                </nav>
+            </header>
 
-<img class="product" src="./assets/wagui_logo.svg" alt="black tofu soup" />
+            <div class="homeBackground">
+                <article id="brandingHeroContainer" class="container d-sm-flex">
+
+                    <h2>Wagui Restaurant Introduction</h2>
+
+                    <section class="momDiv col-sm">
+                        <h2>Mom's Wagui</h2>
+                        <img class="mom d-md-flex" src="assets/wagui_mom.png" alt="Wagui Mom">
+                    </section>
+
+                    <section class="logoAndStory col-sm">
+                        <h2 class="brandTitle">Wagui Story</h2>
+                        <img class="textLogo justify-content-center" src="assets/wagui_logo.svg" alt="wagui logo">
+                        <!-- <p class="storyTitle text-center">南方米造 秈稻碗粿<br> 家傳五代道地碗粿手藝
+                        </p> -->
+                        <img class="storyText text-center" src="assets/WaguiHeroText.svg" alt="wagui story"> 
+                    
+                        <!-- <p class="storyText text-center">不捨阿嬤30年手藝失傳, 南方米<br>造懷抱著小吃精緻化的夢想, 傳<br>承五代道地碗粿手藝,
+                            從原料嚴<br>選到炊製都精準用心, 堅持使用<br>台南在地秈稻與非基因豆經由<br>180天發酵的天然精釀醬油, 要<br>用天然的食材讓消費者品嘗美食<br>也吃得健康。</p> -->
+                    </section>
+
+                </article>
+
+            </div>
+
+            <a id="Menu_Jump"></a>
+            <article id="productMenu" class="container">
+
+                <h1>Menu</h1>
+                <div class="row">
+
+                    <section class="col-md-4 duckPorkPudding">
+                        <img class="product" src="assets/duck_pudding.jpg" alt="duck egg pudding">
+                        <div class="productDescription">
+                            <h3>Duck Egg and Pork Rice Pudding</h3>
+                            <p>Local rice pudding cooked the traditional way – in a porcelain bowl ready to eat.</p>
+                        </div>
+                    </section>
+
+                    <section class="col-md-4 blackTofuSoup">
+                        <img class="product" src="assets/black_soup.jpg" alt="black tofu soup">
+                        <div class="productDescription">
+                            <h3> Black Tofu and Green Onion Soup</h3>
+                            <p>Beef stock soup with black and fried tofu and green onion.</p>
+                        </div>
+                    </section>
+
+                    <section class="col-md-4 agedSoyPudding">
+                        <img class="product" src="assets/soy_pudding.jpg" alt="soy pork pudding">
+                        <div class="productDescription">
+                            <h3>Rice Pudding with Pork and Soy Sauce</h3>
+                            <p>Pork rice pudding served with aged soy sauce and toped with green onion.</p>
+                        </div>
+                    </section>
+
+                </div>
+            </article>
+
+            <a id="Business_Jump"></a>
+            <article id="business" class="container">
+
+                <h1>Business</h1>
+                <div class="row">
+                    <h2>Business</h2>
+
+                    <section class="col-6 contact">
+                        <h3><u>Contact</u></h3>
+                        <h4>Phone:</h4>
+                        <p>+886 6 5713126</p>
+                        <h4>Email:</h4>
+                        <!-- <p>shaoyang.hsu@gmail.com</p> -->
+                        <a href="mailto:shaoyang.hsu@gmail.com?subject=Sent%20From%20Wagui.tw">Shaoyang Hsu</a>
+                        <h3 class="location"><u>Address</u></h3>
+                        <address>No. 7, <br>Xinsheng S. Rd<br>Madou District<br>Tainan City – Taiwan (ROC)</address>
+                    </section>
+
+                    <section class="col-6 hours">
+                        <h3><u>Hours</u></h3>
+                        <h4>Open</h4>
+                        <h5>Tue-Sun</h5>
+                        <p><time>07:00</time>-<time>19:00</time>
+                            <!-- <p><time>07:00</time>-<time>14:30</time>/<br><time>19:00</time>-<time>21:00</time><br> -->
+                            <!-- <h5>Sun</h5>
+                            <p><time>07:00</time>-<time>14:00</time></p> -->
+                        <h4>Closed</h4>
+                        <p>Mondays<br>National Holidays</p>
+                    </section>
+
+                    <section class="col-md  map">
+                        <h3><u>Map</u></h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.609491877415!2d120.23909771506871!3d23.184448584871376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e7e87b6799f97%3A0x5f13d9375abd9e05!2sNo.%207%2C%20Xinsheng%20South%20Road%2C%20Madou%20District%2C%20Tainan%20City%2C%20Taiwan%20721!5e0!3m2!1sen!2sus!4v1606575206908!5m2!1sen!2sus"></iframe>
+                    </section>
+
+                </div>
+            </article>
+
+            <footer class="fixed-bottom ">
+                <h6>
+                    <span id="copyright">
+                        <script>
+                            document
+                                .getElementById("copyright")
+                                .appendChild(document.createTextNode(new Date().getFullYear()));
+                        </script>
+                    </span>
+                    <small>© Madou Salty Rice Cakes</small>
+                </h6>
+
+                <a><img class="socialIcon" src="/assets/icon/network.svg" alt="line"></a>
+                <!-- <a href="https://line.me/R/nv/recommendOA/@linedevelopers"><img class="socialIcon" src="/assets/icon/network.svg" alt="line"></a> -->
+                <a><img class="socialIcon" src="/assets/icon/facebook-1.svg" alt="facebook"></a>
+                <!-- <a href="https://www.facebook.com/"><img class="socialIcon" src="/assets/icon/facebook-1.svg"
+                        alt="facebook"></a> -->
+
+            </footer>
+        </main>
+    </div>
+
+</html>

@@ -26,7 +26,6 @@ export DEFAULT_EMAIL
 
 ## Add website dir
 mkdir html && cd html && sudo rm -f ${PWD}
-# Add ENV for docker-compose.yml use
 ## Import web files
 curl -LO https://github.com/NH3R717/Wagui-Restaurant/archive/refs/heads/dev.zip
 ## uncompress webfiles and remove *.zip 
