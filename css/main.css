@@ -1,0 +1,359 @@
+    /* 
+   • Umholtz, Tommy
+   • Full Sail University
+   • Web Design and Development, Bachelors of Science – Online
+   • Web Design Portfolio 4 (WDPIV)
+   
+   */
+
+    /* @font-face {
+        font-family: "ShinShuMedium";
+        src: url("/fonts/ShinShuMedium.ttf");
+    } */
+
+    @font-face {
+        font-family: "FuturaMedium";
+        src: url("/fonts/Futura-Medium-01.ttf");
+    }
+
+    @media all and (max-width: 370px) {
+        #brandingHeroContainer {
+            font-size: 6vw;
+            padding-bottom: .1em;
+            width: auto;
+            height: auto;
+        }
+        .momDiv {
+            display: none;
+        }
+        .logoAndStory {
+            margin: 0em 2em 1em 0em;
+            font-family: "ShinShuMedium";
+            font-weight: bolder;
+        }
+        .textLogo {
+            display: block;
+            margin: 0 auto 0 auto;
+            width: 70vw;
+        }
+        .storyText {
+            padding-top: 1.5em;
+            font-size: 5vw;
+            width: auto;
+            height: auto;
+        }
+        .product {
+            width: 100%;
+        }
+        #business {
+            text-align: center;
+            font-size: 100%;
+            margin-bottom: 1em;
+        }
+        #business h1 {
+            text-align: left;
+        }
+        address {
+            margin: -1.2em 0em 0em 0em;
+        }
+        .map {
+            width: 90%;
+        }
+        iframe {
+            width: 90%;
+            max-width: 30em;
+            height: 20em;
+        }
+        .socialIcon {
+            height: 80%;
+            padding: .5em 1em 0 0;
+            float: right;
+        }
+        footer h6 {
+            font-size: .85em;
+        }
+    }
+
+    @media all and (min-width: 371px) and (max-width: 575px) {
+        #brandingHeroContainer {
+            font-size: 6vw;
+            padding-bottom: .1em;
+            width: auto;
+            height: auto;
+        }
+        .momDiv {
+            display: none;
+        }
+        .logoAndStory {
+            margin: 0em 2em 1em 0em;
+            font-family: "ShinShuMedium";
+            font-weight: bolder;
+        }
+        .textLogo {
+            display: block;
+            margin: 0 auto 0 auto;
+            width: 70vw;
+        }
+        .storyText {
+            font-size: 5vw;
+            width: auto;
+            height: auto;
+        }
+        .product {
+            width: 100%;
+        }
+        #business {
+            text-align: center;
+            font-size: 120%;
+            margin-bottom: 1em;
+        }
+        #business h1 {
+            text-align: left;
+        }
+        address {
+            margin-top: -.8em;
+        }
+        .map {
+            width: 90%;
+            /* margin-bottom: 4em; */
+        }
+        iframe {
+            width: 90%;
+            max-width: 30em;
+            height: 20em;
+        }
+        .socialIcon {
+            height: 80%;
+            padding: .5em 1em 0 0;
+            float: right;
+        }
+    }
+
+    @media all and (min-width: 576px) {
+        #brandingHeroContainer {
+            padding-top: 3em;
+        }
+        .logoAndStory {
+            margin: 0em 2em 1em 0em;
+            font-family: "ShinShuMedium";
+            font-weight: bolder;
+        }
+        .textLogo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+            margin: 2em auto 2.2em auto;
+            width: 38vw;
+        }
+        .storyTitle {
+            font-size: 3.6vw;
+            line-height: 1.3em;
+            width: auto;
+            height: auto;
+        }
+        .storyText {
+            font-size: 2.6vw;
+            line-height: 1.3em;
+            width: auto;
+            height: auto;
+        }
+        .product {
+            width: 23vw;
+        }
+        #business {
+            font-size: 170%;
+        }
+        address {
+            margin-top: -.6em;
+        }
+        iframe {
+            width: 100%;
+            max-width: 20em;
+            height: 15em;
+        }
+        .socialIcon {
+            height: 80%;
+            padding: .5em 2em 0 0;
+            float: right;
+        }
+    }
+
+    h1 {
+        color: rgb(83, 7, 7);
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    body {
+        background-image: url("/assets/brick.jpg");
+        background-size: 220px 220px;
+        background-repeat: repeat;
+    }
+
+    .backgroundOverlay {
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 110%;
+    }
+
+    .homeBackground {
+        border-bottom: .2em solid brown;
+        background: rgba(179, 27, 0, 0.199);
+        padding-bottom: .5em;
+    }
+
+    nav {
+        background-color: rgba(165, 80, 41, .8);
+        top: 0;
+        height: 2.5em;
+    }
+
+    #navContainer {
+        font-family: "Helvetica";
+        font-size: 1.2em;
+        color: black;
+        margin: 0.05em 0 0 0.6em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #navContainer a:link {
+        color: black;
+    }
+
+    #navContainer a:visited {
+        color: black;
+    }
+
+    #brandingHeroContainer {
+        padding-top: 2.5em;
+        color: rgb(61, 9, 9);
+    }
+
+    .momDiv {
+        margin: 1em;
+    }
+
+    .mom {
+        height: 63vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #productMenu {
+        padding-top: 2em;
+        font-family: "FuturaMedium";
+    }
+
+    #productMenu h1 {
+        margin-bottom: -.15em;
+    }
+
+    #productMenu img {
+        margin: 1.5em .5em .3em 0;
+        width: 100%;
+        border-radius: .8em;
+        border: .1em solid brown;
+        box-shadow: 0.1em 0.1em 0.2em grey;
+    }
+
+    .productDescription {
+        text-align: center;
+    }
+
+    .productDescription h3 {
+        margin-top: .2em;
+        line-height: 1em;
+        color: brown;
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    .productDescription p {
+        color: rgb(110, 29, 29);
+        font-size: 1.3em;
+        line-height: 1em;
+        text-shadow: 0.03em 0.03em 0.03em grey;
+        margin: 0;
+    }
+
+    #business {
+        font-family: "FuturaMedium";
+        padding-top: 1.2em;
+    }
+
+    #business h3 {
+        margin-bottom: .7em;
+        color: brown;
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business h4 {
+        margin: 0;
+        color: rgb(190, 38, 38);
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business h5 {
+        margin: .4em 0 0 0;
+        color: rgb(190, 38, 38);
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business p {
+        margin-bottom: .4em;
+        line-height: 1.3em;
+        color: rgb(110, 29, 29);
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business a {
+        margin-bottom: .4em;
+        line-height: 1.3em;
+        color: rgb(0, 107, 156);
+        text-decoration: underline;
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    address {
+        /* margin-top: -.8em; */
+        line-height: 1.3em;
+        color: rgb(110, 29, 29);
+        text-shadow: 0.03em 0.03em 0.03em grey;
+    }
+
+    #business .location {
+        margin-top: .6em;
+    }
+
+    .map h3 {
+        padding-bottom: .3em;
+    }
+
+    .map {
+        padding-bottom: 2em;
+    }
+
+    footer {
+        background-color: rgba(165, 80, 41, .8);
+        height: 2.5em;
+    }
+
+    footer h6 {
+        font-family: "Helvetica";
+        color: rgba(0, 0, 0, 0.8);
+        margin: 0 0 0 .6em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #copyright {
+        font-family: "Helvetica";
+        font-size: .8em;
+        margin-right: -.2em;
+    }

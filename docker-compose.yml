@@ -15,6 +15,9 @@ services:
       - DEBUG=1
     volumes:
       - "${CONTAINER_DIR}/html:/usr/share/nginx/html:ro"
+      - "${CONTAINER_DIR}/assets:/usr/share/nginx/assets:ro"
+      - "${CONTAINER_DIR}/css:/usr/share/nginx/css:ro"
+      - "${CONTAINER_DIR}/fonts:/usr/share/nginx/fonts:ro"
       - conf:/etc/nginx/conf.d
       - certs:/etc/nginx/certs
     restart: always
