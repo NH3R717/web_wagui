@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: nginx:latest
+    image: nginx:stable-alpine
     container_name: web_wagui
     expose:
       - "80"
