@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  web:
+  web_wagui:
     image: nginx:alpine
     container_name: web_wagui
     expose:
