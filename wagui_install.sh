@@ -12,17 +12,17 @@ export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
 # add ENV for docker-compose.yml use
 echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
-
+export CONTAINER_DIR
 echo "NETWORK=${NETWORK}" >> .env
-
+export NETWORK
 echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
-
+export DOMAIN_NAME_1
 echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
-
+export DOMAIN_NAME_2
 echo "DOMAIN_NAME_3=${DOMAIN_NAME_3}" >> .env
-
+export DOMAIN_NAME_3
 echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
-
+export DEFAULT_EMAIL
 
 ## Add website dir
 mkdir html && cd html && sudo rm -f ${PWD}
