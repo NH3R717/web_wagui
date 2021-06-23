@@ -7,22 +7,25 @@
 ### Web Install & Run ###
 #########################
 
-## create dir for Docker container
-export CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
+CONTAINER_DIR="${HOME_DIR}/Docker/Wagui"
+
+# change dir to new container dir
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
+
 # add ENV for docker-compose.yml use
-echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
 export CONTAINER_DIR
-echo "NETWORK=${NETWORK}" >> .env
+echo "CONTAINER_DIR=${CONTAINER_DIR}" >> .env
 export NETWORK
-echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
+echo "NETWORK=${NETWORK}" >> .env
 export DOMAIN_NAME_1
-echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
+echo "DOMAIN_NAME_1=${DOMAIN_NAME_1}" >> .env
 export DOMAIN_NAME_2
-echo "DOMAIN_NAME_3=${DOMAIN_NAME_3}" >> .env
+echo "DOMAIN_NAME_2=${DOMAIN_NAME_2}" >> .env
 export DOMAIN_NAME_3
-echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
+echo "DOMAIN_NAME_3=${DOMAIN_NAME_3}" >> .env
 export DEFAULT_EMAIL
+echo "DEFAULT_EMAIL=${DEFAULT_EMAIL}" >> .env
+
 
 ## Add website dir
 mkdir html && cd html && sudo rm -f ${PWD}
@@ -33,7 +36,7 @@ unzip dev.zip && rm -rf dev.zip
 ## remove unnecessary files
 cd Wagui-Restaurant-dev && sudo rm README.md .gitignore dockerfile wagui_install.sh docker-compose.yml LICENSE  
 ## Copy files from *-master to WebFiles
-cp -a . .. && cd .. && sudo rm -rf web_test-master && cd ..
+cp -a . .. && cd .. && sudo rm -rf Wagui-Restaurant-dev && cd ..
 pwd
 # import docker-compose.yml
 sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/dev/docker-compose.yml > docker-compose.yml
