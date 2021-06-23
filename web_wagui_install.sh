@@ -12,19 +12,20 @@ echo \
 
 '
 
-export CONTAINER_DIR="${HOME_DIR}/Docker/Test"
-echo **
-echo "Created container dir ${CONTAINER_DIR}"
-echo **
-
 ################################################
 ##! Project Dependent ENV / Change as Needed ###
 
 export PROJECT_NAME=web_wagui
 export GIT_BRANCH=dev
+export CONTAINER_DIR_NAME=Wagui
 
 ##! Project Dependent ENV / Change as Needed ###
 ################################################
+
+export CONTAINER_DIR="${HOME_DIR}/Docker/${CONTAINER_DIR_NAME}"
+echo && echo **
+echo "Created container dir ${CONTAINER_DIR}"
+echo && echo **
 
 # create dir for Docker container & change dir
 mkdir -p ${CONTAINER_DIR} && cd "${CONTAINER_DIR}"
