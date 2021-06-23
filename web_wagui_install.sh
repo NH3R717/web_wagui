@@ -45,5 +45,5 @@ sudo curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/master/web/we
 ### Useful Commands & Notes here ###
 ###################################*
 
-# sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/dev/wagui_install.sh | exec bash
+# sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/dev/web_wagui_install.sh | exec bash
 # sudo docker stop web_wagui && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/Wagui
