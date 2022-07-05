@@ -144,3 +144,14 @@ build
 
 /.vscode
 /Junk
+
+############################
+# Other
+############################
+notes.md
+markdown_syntax.md
+.vscode
+/shell
+/other
+/public
+/test*
